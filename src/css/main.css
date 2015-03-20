@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+
+box-sizing:
+    border-box;
+}
+html,
+body {height: 100%}
+body {font-family: verdana, sans-serif; -webkit-font-smoothing: antialiased;padding: 10px;font-size: 15px;
+    font-style: italic;font-variant: normal;font-weight:bold;background-color: #e0e0e0;color: #330c19;}
+body > header {padding: 30px 20px;}
+body > header:before {content: '';width: 10px;background-color: #00aeef;float: left;height: 50px;margin-right: 5px;}
+body > footer {font-size: 12px;font-style: italic;margin: 10px 25px;}
+.ticker { display:inline-block;height: 60px;width: 120px;margin: 15px;text-align: center; color: #000;
+    -webkit-transition: background 150ms ease;  position: relative;  border-radius: 7px; }
+.ticker span.symbol {position: absolute;top: 2px;left: 5px;font-size: 13px;}
+.ticker span.price {position: absolute;top: 23px;left: 50px;font-size: 15px;}
+.ticker span.change {position: absolute;bottom: 2px;right: 5px;font-size: 10px;}
+.ticker.up {background-color:blue;color: #fff;}
+.ticker.down {background-color: lightpink;}
+.ticker.down span.symbol,.ticker.down span.price {color: #fff;}
+.ticker.down span.change {color: #fff;}
